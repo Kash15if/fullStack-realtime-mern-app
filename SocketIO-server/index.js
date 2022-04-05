@@ -4,10 +4,8 @@ var cors = require("cors");
 const socketIo = require("socket.io");
 
 const port = process.env.PORT || 4001;
-const index = require("./routes/index");
 
 const app = express();
-app.use(index);
 app.use(cors());
 
 const server = http.createServer(app);
